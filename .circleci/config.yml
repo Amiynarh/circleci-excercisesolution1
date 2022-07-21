@@ -3,7 +3,8 @@
 version: 2.1
 
 orbs:
-# Add jobs here
+  aws-cli: circleci/aws-cli@2.0.3
+
 
 jobs:
   create-infrastructure:
@@ -17,7 +18,7 @@ jobs:
           command: |
             aws cloudformation deploy \
               --template-file template.yml \
-              --stack-name myStack-${CIRCLE_WORKFLOW_ID:0:5} \
+              --stack-name my-stack
               --region us-west-2
 
 workflows:
