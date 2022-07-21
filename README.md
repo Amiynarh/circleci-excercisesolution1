@@ -14,9 +14,9 @@
 * To use the AWS CLI in your jobs you'll need to the following environment variables to the in Circle CI > Project Settings > environment variables. The value of these variables can be fetched from the AWS IAM user.
 
 * If not already, create an AWS IAM user with programmatic access, and it will generate these credentials.
-,,,
+``
 AWS_ACCESS_KEY_ID
 AWS_DEFAULT_REGION
 AWS_SECRET_ACCESS_KEY
-,,,
+``
 
